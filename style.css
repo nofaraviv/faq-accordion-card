@@ -1,0 +1,174 @@
+.page-container {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 12% 0;
+  /* height: 100vh; */
+}
+
+p {
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+}
+
+hr {
+  color: hsl(240, 6%, 50%);
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 50px hsl(237, 12%, 33%);
+  border-radius: 10px;
+  width: 70%;
+}
+
+/* Images side */
+
+.images {
+  padding-left: 0;
+  position: relative;
+  background: url(images/illustration-woman-online-desktop.svg) -300% 50%/95% no-repeat, url(images/bg-pattern-desktop.svg) 120% 65%/190% no-repeat;
+}
+
+.email-box-img {
+  position: absolute;
+  top: 40%;
+  left: -13%;
+  z-index: 2;
+}
+
+.woman-online-mobile-img {
+  display: none;
+}
+
+/* FAQ Side */
+
+.faq-column {
+  padding: 100px 100px 70px 0;
+}
+
+.faq-column h1 {
+  font-weight: 700;
+  padding-bottom: 5%;
+}
+
+.question-heading {
+  font-size: 14px;
+}
+
+.expanded .question-heading {
+  color: hsl(238, 29%, 16%);
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.question-heading:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.arrow-icon {
+  float: right;
+  transition: transform 300ms ease;
+}
+
+.hidden-answer {
+  font-size: 12px;
+  max-height: 0;
+  opacity: 0;
+  transition: all 400ms ease;
+}
+
+.expanded .hidden-answer {
+    padding-top: 1.2em;
+    max-height: 100px;
+    opacity: 1;
+    transition: all 400ms ease;
+}
+
+.expanded .arrow-icon {
+  transform: rotateX(180deg);
+  transition: transform 300ms ease;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+
+  .container {
+    margin-top: 150px;
+  }
+
+  .faq-column h1 {
+    text-align: center;
+  }
+
+  .faq-column  {
+    padding: 20px;
+  }
+
+  .images {
+    height: 130px;
+    background: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+  }
+
+  .woman-online-mobile-img {
+    display: block;
+    position: absolute;
+    top: -95px;
+    left: 201px;
+  }
+
+  .email-box-img {
+    display: none;
+  }
+
+}
+
+@media (max-width: 993px) {
+
+  .woman-online-mobile-img {
+    display: block;
+    position: absolute;
+    top: -95px;
+    left: 178px;
+  }
+
+}
+
+@media (max-width: 790px) {
+
+  .woman-online-mobile-img {
+    display: block;
+    position: absolute;
+    top: -95px;
+    left: 131px;
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .woman-online-mobile-img {
+    display: block;
+    position: absolute;
+    top: -95px;
+    left: 90px;
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .woman-online-mobile-img {
+    display: block;
+    position: absolute;
+    top: -95px;
+    left: 29px;
+  }
+
+}
